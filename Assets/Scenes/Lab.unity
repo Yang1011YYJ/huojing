@@ -5924,18 +5924,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f266d6eab24b5241b0e7aff13790d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaskOverLay: {fileID: 0}
+  MaskOverLay: {fileID: 1808723943}
   JumpTeach: {fileID: 0}
   InTeaching: 0
-  TextLabel: {fileID: 0}
-  TextPanel: {fileID: 0}
-  FaceImage: {fileID: 0}
-  NPCNone: {fileID: 0}
-  NPCAngry: {fileID: 0}
-  Name: {fileID: 0}
-  animatorControll: {fileID: 0}
-  dialogueLab: {fileID: 0}
-  TextFileTeaching: {fileID: 0}
+  TextLabel: {fileID: 1856647401}
+  TextPanel: {fileID: 444151556}
+  FaceImage: {fileID: 1854133085}
+  NPCNone: {fileID: 21300000, guid: 481b7868d0a1dd3489c99cc35e5c5a3a, type: 3}
+  NPCAngry: {fileID: 21300000, guid: 15d31b9734d388641a5ad97207e17d0d, type: 3}
+  Name: {fileID: 1935843217}
+  TextFileTeaching: {fileID: 4900000, guid: 5819ec7fd64946f48bd5d6eef43df6a7, type: 3}
   CurrentText: {fileID: 0}
   index: 0
   TextSpeed: 0.1

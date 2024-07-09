@@ -29,8 +29,8 @@ public class TeachLevel : MonoBehaviour
     string[] nameset;
 
     [Header("腳本")]
-    [SerializeField] AnimatorControll animatorControll;
-    [SerializeField] DialogueLab dialogueLab;
+    AnimatorControll animatorControll;
+    DialogueLab dialogueLab;
 
     [Header("文本文件")]
     //對話文本
@@ -57,38 +57,52 @@ public class TeachLevel : MonoBehaviour
         MaskOverLay.SetActive(false);
         InTeaching = false;
 
-        //指定讀取的文件為實驗室文本
-        CurrentText = TextFileTeaching;
-        //讀取文件
-        GetTextFromFile(CurrentText);
+        animatorControll = gameObject.GetComponent<AnimatorControll>();
+        dialogueLab = gameObject.GetComponent<DialogueLab>();
+
         //隱藏文本框
         TextPanel.SetActive(false);
     }
-    private void OnEnable()//一開始直接顯示第一行，然後index成為1
-    {
-        //開始打字
-        TextFinished = true;
-        //開始輸入文字
-        StartCoroutine(SetTextUI());
-        string[] nameset = TextList[index].Split('&');
-        Name.text = nameset[1].ToString();
-    }
+
 
     private void Update()
     {
-        if(dialogueLab.InLevel)
-        {//如果對話結束 進入關卡環節
+        if(dialogueLab.InLevel && !InTeaching)
+        {//如果對話結束 進入關卡環節且尚未觸發教學
             InTeaching = true;//啟用引導教學
-            TextPanel.SetActive(true);//前導對話
             dialogueLab.InLevel = false;//進入教學對話所以還沒開始關卡
+            //指定讀取的文件為實驗室文本
+            CurrentText = TextFileTeaching;
+            //讀取文件
+            GetTextFromFile(CurrentText);
+            //開始打字
+            TextFinished = true;
+            //開始輸入文字
             StartCoroutine(SetTextUI());
+            string[] nameset = TextList[index].Split('&');
+            Name.text = nameset[1].ToString();
+            TextPanel.SetActive(true);//前導對話
         }
+
         if ((Input.GetKeyDown(KeyCode.Q)) && TextPanel.activeSelf && InTeaching)
         {//如果想要觸發對話繼續的Q鍵
-            if (dialogueLab.InLevel)//如果進入引導步驟
+            //if (dialogueLab.InLevel)//如果進入引導步驟
+            //{
+            //    TextPanel.SetActive(false);//關掉對話框
+            //    MaskOverLay.SetActive(true);//顯示遮罩
+            //}
+            if(index == TextList.Count)
+            {//文件結束
+
+            }
+            else if (InTeaching && TextFinished)
             {
-                TextPanel.SetActive(false);//關掉對話框
-                MaskOverLay.SetActive(true);//顯示遮罩
+                StartCoroutine(SetTextUI());
+            }
+            else if (!TextFinished && !CancelText)//如果文字還沒輸出完(TextFished == false)且CancalText = false
+                                                 //如果按下的時候還沒輸出完而且cancelText是否 = 要跳過
+            {
+                CancelText = true;
             }
         }
     }
