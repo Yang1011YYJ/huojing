@@ -1,0 +1,19 @@
+V1
+2:Start,O
+2:s1104040011,p
+2:t1104040011,y
+1:1,Assembly-CSharp,,p_,y_
+2:OnTriggerEnter2D,h
+2:other,Z
+2:ComData,n
+2:SetTextUI,e
+2:currentText,f
+2:line,v
+2:case "1":,y7
+2:case "(":,g
+2:i,S
+2:case "胡金":,F
+2:Update,x
+2:FixedUpdate,P
+2:MoveDirection,r
+2:WalkAxis,d

@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NPC
+  - Item
+  - UI
+  - GameSquare
+  - Bag
+  - Door
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Game
+  - Water
+  - UI
+  - Player
+  - NPC
+  - Item
+  - GameObject
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Level
+    uniqueID: 3989772533
+    locked: 0
+  - name: Canvas
+    uniqueID: 1919626595
+    locked: 0
+  - name: Project1
+    uniqueID: 3233196405
+    locked: 0
+  - name: Project2
+    uniqueID: 2063761721
+    locked: 0
+  - name: 
+    uniqueID: 890777007
+    locked: 0
+  - name: Project3
+    uniqueID: 2897980619
+    locked: 0
+  - name: New Layer 7
+    uniqueID: 958293481
+    locked: 0
+  - name: New Layer 8
+    uniqueID: 468627237
+    locked: 0
+  - name: NPC
+    uniqueID: 2465768957
+    locked: 0
+  - name: Player
+    uniqueID: 1048225995
+    locked: 0
+  - name: New Layer 11
+    uniqueID: 1401542361
+    locked: 0
+  - name: New Layer 12
+    uniqueID: 2110950957
+    locked: 0
+  - name: New Layer 13
+    uniqueID: 572095191
+    locked: 0
+  - name: New Layer 14
+    uniqueID: 884456103
+    locked: 0
+  - name: New Layer 15
+    uniqueID: 815746639
+    locked: 0
+  - name: New Layer 16
+    uniqueID: 2496130851
+    locked: 0
+  - name: New Layer 17
+    uniqueID: 3627299369
+    locked: 0
+  - name: New Layer 18
+    uniqueID: 485483221
+    locked: 0
+  - name: New Layer 19
+    uniqueID: 2003643223
+    locked: 0
+  - name: Canvas
+    uniqueID: 405396791
+    locked: 0
