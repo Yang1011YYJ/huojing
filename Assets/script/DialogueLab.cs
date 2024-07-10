@@ -31,6 +31,7 @@ public class DialogueLab : MonoBehaviour
     public TextAsset TextFile1;
     public TextAsset TextFileNPCTalk;
     public TextAsset TextFileExit;
+    public TextAsset TextFileTeaching;
     TextAsset CurrentText;
     //文本行數
     public int index;
@@ -66,6 +67,7 @@ public class DialogueLab : MonoBehaviour
     [Header("NPC相關")]
     public GameObject NPC;
     public bool interactable;
+
 
     void Awake()//在OnEnable前面執行(Start在OnEnable後面)
     {
@@ -203,7 +205,7 @@ public class DialogueLab : MonoBehaviour
 
     IEnumerator StartFind()
     {
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(3f);
         gameObject.GetComponent<AnimatorControll>().FadeOutPanel.SetActive(false);
         Player.SetActive(true);
         InLevel = true;

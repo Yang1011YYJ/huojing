@@ -5806,6 +5806,7 @@ MonoBehaviour:
   TextFile1: {fileID: 4900000, guid: 0b0da13862a0ef64aabff33fe5dce488, type: 3}
   TextFileNPCTalk: {fileID: 4900000, guid: 884c307bdfe666f4d8fb459553c947a1, type: 3}
   TextFileExit: {fileID: 4900000, guid: fb24eef86823c44419fb53c4c15080bb, type: 3}
+  TextFileTeaching: {fileID: 4900000, guid: 5819ec7fd64946f48bd5d6eef43df6a7, type: 3}
   index: 0
   TextSpeed: 0.1
   TextFinished: 0
@@ -5927,19 +5928,6 @@ MonoBehaviour:
   MaskOverLay: {fileID: 1808723943}
   JumpTeach: {fileID: 0}
   InTeaching: 0
-  TextLabel: {fileID: 1856647401}
-  TextPanel: {fileID: 444151556}
-  FaceImage: {fileID: 1854133085}
-  NPCNone: {fileID: 21300000, guid: 481b7868d0a1dd3489c99cc35e5c5a3a, type: 3}
-  NPCAngry: {fileID: 21300000, guid: 15d31b9734d388641a5ad97207e17d0d, type: 3}
-  Name: {fileID: 1935843217}
-  TextFileTeaching: {fileID: 4900000, guid: 5819ec7fd64946f48bd5d6eef43df6a7, type: 3}
-  CurrentText: {fileID: 0}
-  index: 0
-  TextSpeed: 0.1
-  TextList: []
-  TextFinished: 0
-  CancelText: 0
 --- !u!1 &961294282
 GameObject:
   m_ObjectHideFlags: 0
